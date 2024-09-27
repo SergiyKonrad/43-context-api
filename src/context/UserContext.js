@@ -1,4 +1,4 @@
-import React, { createContext } from 'react'
+import { createContext } from 'react'
 
 // Create Context with default values
 const UserContext = createContext({
