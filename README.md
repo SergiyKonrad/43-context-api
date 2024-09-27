@@ -1,38 +1,45 @@
-# React Project for the React Course
+# Context API Project
 
-## Available Scripts
+This project demonstrates how to use React Context to manage user state in a simple app. It allows users to switch between different names using a button, with the name being managed through React Context.
 
-In the project directory, you can run:
+## Deployed Version
 
-### `npm start`
+Check out the deployed version here: [https://43-context-api.vercel.app/](https://43-context-api.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instructions for Running Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the repository:
 
-### `npm test`
+```
+git clone https://github.com/SergiyKonrad/43-context-api.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+### 2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd 43-context-api
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Install dependencies:
 
-### `npm run eject`
+```
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## Functionality Description
+
+- The app uses React Context to manage the `userName` state.
+- A button allows the user to toggle between different user names (`Bogdan` and `Alice`).
+- This demonstrates the use of Context API to avoid prop drilling by managing state globally.
