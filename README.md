@@ -1,4 +1,4 @@
-# React Redux User Management Project
+# Simple React Redux User Management Project
 
 This project demonstrates how to manage user state using Redux in a React app. The user can toggle between different names (Sergiy and Mila) using a button, with the state being managed through Redux.
 
@@ -39,6 +39,8 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 - The app uses Redux to manage the userName state.
 
 - A button allows the user to toggle between different user names (Sergiy and Mila).
+
+- useSelector is used to select the current user name from the Redux store, and useDispatch is used to toggle between the names by dispatching an action.
 
 - This demonstrates the use of Redux for centralized state management and avoiding prop drilling.
 
