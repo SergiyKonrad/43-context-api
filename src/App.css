@@ -3,8 +3,10 @@
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 3rem;
   margin-top: 20px;
+  margin-bottom: 2rem;
+  /* color: #fff; */
 }
 
 button {

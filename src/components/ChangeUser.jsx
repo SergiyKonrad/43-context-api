@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { changeUserName, toggleUserName } from '../redux/userSlice'
-import './ChangeUser.css'
+import styles from './ChangeUser.module.css'
 
 function ChangeUser() {
   const dispatch = useDispatch()
@@ -12,14 +12,16 @@ function ChangeUser() {
   return (
     <div>
       <input
+        className={styles['input-field']}
         type="text"
         placeholder="Enter New Name"
         onChange={handleChange}
-        className="input-field"
+        // className="input-field"
       />
       <button
+        className={styles['change-button']}
         onClick={() => dispatch(toggleUserName())}
-        className="change-button"
+        // className="change-button"
       >
         Toggle User Name
       </button>
