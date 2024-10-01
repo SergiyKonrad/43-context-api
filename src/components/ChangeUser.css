@@ -1,0 +1,31 @@
+.input-field {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  &:hover,
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}
+
+.input-field::placeholder {
+  color: #999;
+  outline: none;
+}
+
+.change-button {
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
