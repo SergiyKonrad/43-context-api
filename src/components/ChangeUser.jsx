@@ -30,3 +30,7 @@ function ChangeUser() {
 }
 
 export default ChangeUser
+
+/*---NB.---
+In JavaScript, object property names with special characters, like hyphens, need to be accessed using bracket notation. If the class name didn't have a hyphen, you could use dot notation like;
+ styles.inputField.   */

@@ -1,6 +1,6 @@
-# Context API React Project
+# React Redux User Management Project
 
-This project demonstrates how to use React Context to manage user state in a simple app. It allows users to switch between different names using a button, with the name being managed through React Context.
+This project demonstrates how to manage user state using Redux in a React app. The user can toggle between different names (Sergiy and Mila) using a button, with the state being managed through Redux.
 
 ## Deployed Version
 
@@ -36,6 +36,8 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Functionality Description
 
-- The app uses React Context to manage the `userName` state.
-- A button allows the user to toggle between different user names (`Sergiy` and `Mila`).
-- This demonstrates the use of Context API to avoid prop drilling by managing state globally.
+- The app uses Redux to manage the userName state.
+
+- A button allows the user to toggle between different user names (Sergiy and Mila).
+
+- This demonstrates the use of Redux for centralized state management and avoiding prop drilling.

@@ -1,6 +1,6 @@
 {
-  "name": "Movie Finder e.g.",
-  "short_name": "MovieFinder e.g.",
+  "name": "Simple-React-Redux-project",
+  "short_name": "SimpleRedux",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
