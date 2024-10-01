@@ -1,6 +1,10 @@
-# Simple React Redux User Management Project
+# React Redux User Management Project with Redux Toolkit
 
-This project demonstrates how to manage user state using Redux in a React app. The user can toggle between different names (Sergiy and Mila) using a button, with the state being managed through Redux.
+This project demonstrates how to manage user state using **Redux Toolkit** in a React app. The user can toggle between different names (Sergiy and Mila) using a button, with the state being managed centrally through Redux.
+
+## Refactoring with Redux Toolkit
+
+The application has been refactored to use Redux Toolkit for better maintainability and simplicity. We use `createSlice` for creating reducers and actions, and `configureStore` for setting up the store.
 
 ## Deployed Version
 
