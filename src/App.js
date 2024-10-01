@@ -1,6 +1,3 @@
-// import { useState } from 'react'
-// import UserContext from './context/UserContext'
-
 import './App.css'
 import User from './components/User'
 import ChangeUser from './components/ChangeUser'
@@ -13,8 +10,9 @@ function App() {
       {/* {' '} */}
       {/* Wrap the app with Redux Provider */}
       <div className="App">
-        <User /> {/* These components will use Redux now */}
+        <User />
         <ChangeUser />
+        {/* These components will use Redux now */}
       </div>
     </Provider>
   )
@@ -22,8 +20,8 @@ function App() {
 
 export default App
 
-// -----
-
+// --- Second Approach (Direct Redux Usage in App.js):
+// Simplicity for Small Apps and Control in One File.
 /*
 import { useSelector, useDispatch } from 'react-redux'
 import { changeUserName } from './redux/userSlice'
@@ -48,3 +46,4 @@ function App() {
 
 export default App
 */
+// The App.js component manages everything there, meaning User and ChangeUser are more dependent on App.js for managing state. Not ideal for scalability.
