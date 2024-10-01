@@ -11,13 +11,13 @@ Check out the deployed version here: [https://43-context-api.vercel.app/](https:
 ### 1. Clone the repository:
 
 ```
-git clone https://github.com/SergiyKonrad/43-context-api.git
+git clone https://github.com/SergiyKonrad/Simple-React-Redux-project.git
 ```
 
 ### 2. Navigate to the project directory:
 
 ```
-cd 43-context-api
+cd Simple-React-Redux-project
 ```
 
 ### 3. Install dependencies:
