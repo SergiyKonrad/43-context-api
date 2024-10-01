@@ -40,7 +40,10 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 - A button allows the user to toggle between different user names (Sergiy and Mila).
 
-- useSelector is used to select the current user name from the Redux store, and useDispatch is used to toggle between the names by dispatching an action.
+- The input field allows the user to enter a custom name, and the "Clear" button resets the input field and clears the name.
+
+- The `useSelector` hook is used to access the current user name from the Redux store.
+- The `useDispatch` hook allows dispatching actions to update the user name or toggle between names.
 
 - This demonstrates the use of Redux for centralized state management and avoiding prop drilling.
 

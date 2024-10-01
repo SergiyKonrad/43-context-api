@@ -1,12 +1,20 @@
 import { useDispatch } from 'react-redux'
 import { changeUserName, toggleUserName } from '../redux/userSlice'
+import { useState } from 'react'
 import styles from './ChangeUser.module.css'
 
 function ChangeUser() {
   const dispatch = useDispatch()
+  const [inputValue, setInputValue] = useState('')
 
   const handleChange = (event) => {
     dispatch(changeUserName(event.target.value)) // Dispatch action to change the user name
+    setInputValue(event.target.value) // Update local input value
+  }
+
+  const handleClear = () => {
+    setInputValue('')
+    dispatch(changeUserName('')) // Optionally dispatch empty value
   }
 
   return (
@@ -15,6 +23,7 @@ function ChangeUser() {
         className={styles['input-field']}
         type="text"
         placeholder="Enter New Name"
+        value={inputValue}
         onChange={handleChange}
         // className="input-field"
       />
@@ -24,6 +33,9 @@ function ChangeUser() {
         // className="change-button"
       >
         Toggle User Name
+      </button>
+      <button className={styles['clear-button']} onClick={handleClear}>
+        Clear
       </button>
     </div>
   )
