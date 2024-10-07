@@ -1,10 +1,16 @@
-# React Redux User Management Project with Redux Toolkit
+# React Redux User Management Project with Redux Saga
 
-This project demonstrates how to manage user state using **Redux Toolkit** in a React app. The user can toggle between different names (Sergiy and Mila) using a button, with the state being managed centrally through Redux.
+The application has been refactored to use **Redux Saga** for handling asynchronous logic and managing side effects in the app. We use `createSlice` for creating reducers and synchronous actions, and **Redux Saga** to manage asynchronous actions like `changeUserNameAsync`.
 
-## Refactoring with Redux Toolkit
+This project demonstrates how to manage user state using Redux Saga in a React app.
 
-The application has been refactored to use Redux Toolkit for better maintainability and simplicity. We use `createSlice` for creating reducers and actions, and `configureStore` for setting up the store.
+## Migrated Redux Toolkit async logic to Redux Saga
+
+- Replaced Redux Toolkit's async handling with Redux Saga for better control over side effects.
+- Added sagas for handling asynchronous actions (changeUserNameAsync, toggleUserNameAsync).
+- Updated store configuration to integrate saga middleware and root saga.
+- Refactored components to dispatch saga-based actions instead of Redux Toolkit actions.
+- Removed thunk and other toolkit async configurations in favor of saga-based async logic.
 
 ## Deployed Version
 
@@ -40,7 +46,7 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Functionality Description
 
-- The app uses Redux to manage the userName state.
+- The app uses Redux Saga for managing asynchronous logic and Redux for managing the userName state.
 
 - A button allows the user to toggle between different user names (Sergiy and Mila).
 
@@ -49,7 +55,7 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 - The `useSelector` hook is used to access the current user name from the Redux store.
 - The `useDispatch` hook allows dispatching actions to update the user name or toggle between names.
 
-- This demonstrates the use of Redux for centralized state management and avoiding prop drilling.
+- Redux Saga is used to handle asynchronous updates to the user name, simulating delays and processing with changeUserNameAsync and toggleUserNameAsync.
 
 ## Contributions
 
