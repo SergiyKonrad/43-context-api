@@ -13,7 +13,7 @@ const userSlice = createSlice({
       state.name = action.payload
     },
     toggleUserName: (state) => {
-      // Toggle between Sergiy and Mila
+      console.log(state)
       state.name = state.name === 'Sergiy' ? 'Mila' : 'Sergiy'
     },
   },

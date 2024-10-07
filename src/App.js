@@ -7,12 +7,9 @@ import { store } from './redux/store' // Import the store
 function App() {
   return (
     <Provider store={store}>
-      {/* {' '} */}
-      {/* Wrap the app with Redux Provider */}
       <div className="App">
         <User />
         <ChangeUser />
-        {/* These components will use Redux now */}
       </div>
     </Provider>
   )
@@ -46,4 +43,3 @@ function App() {
 
 export default App
 */
-// The App.js component manages everything there, meaning User and ChangeUser are more dependent on App.js for managing state. Not ideal for scalability.
