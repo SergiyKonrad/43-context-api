@@ -28,8 +28,8 @@ function ChangeUser() {
       />
       <button
         className={styles['change-button']}
-        onClick={() => dispatch({ type: 'user/toggleUserNameAsync' })}
         // Dispatch async toggle action
+        onClick={() => dispatch({ type: 'user/toggleUserNameAsync' })}
       >
         Toggle User Name
       </button>

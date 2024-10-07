@@ -14,7 +14,6 @@ const userSlice = createSlice({
       state.name = action.payload
     },
     toggleUserName: (state) => {
-      // console.log(state)
       console.log('Before Toggle:', state)
       console.log('Before State Name:', state.name)
       state.name = state.name === 'Sergiy' ? 'Mila' : 'Sergiy'
