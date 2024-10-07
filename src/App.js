@@ -2,7 +2,7 @@ import './App.css'
 import User from './components/User'
 import ChangeUser from './components/ChangeUser'
 import { Provider } from 'react-redux'
-import { store } from './redux/store' // Import the store
+import { store } from './redux/store'
 
 function App() {
   return (

@@ -11,9 +11,10 @@ function* changeUserNameAsync(action) {
   }
 }
 
-// Saga to handle toggle between names (Sergiy and Mila)
+// Saga to handle async toggle between names (Sergiy and Mila)
 function* toggleUserNameAsync() {
   try {
+    console.log('Saga is running...')
     yield delay(500)
     yield put(toggleUserName()) // Dispatch success action to toggle the name
   } catch (error) {

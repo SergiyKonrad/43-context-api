@@ -7,7 +7,7 @@ This project demonstrates how to manage user state using Redux Saga in a React a
 ## Migrated Redux Toolkit async logic to Redux Saga
 
 - Replaced Redux Toolkit's async handling with Redux Saga for better control over side effects.
-- Added sagas for handling asynchronous actions (changeUserNameAsync, toggleUserNameAsync).
+- Added sagas.js for handling asynchronous actions (changeUserNameAsync, toggleUserNameAsync).
 - Updated store configuration to integrate saga middleware and root saga.
 - Refactored components to dispatch saga-based actions instead of Redux Toolkit actions.
 - Removed thunk and other toolkit async configurations in favor of saga-based async logic.
@@ -48,7 +48,7 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 - The app uses Redux Saga for managing asynchronous logic and Redux for managing the userName state.
 
-- A button allows the user to toggle between different user names (Sergiy and Mila).
+- A button allows the user to toggle between different user names (Sergiy and Mila e.g.).
 
 - The input field allows the user to enter a custom name, and the "Clear" button resets the input field and clears the name.
 
